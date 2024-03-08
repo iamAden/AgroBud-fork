@@ -1,0 +1,39 @@
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #FDFFEA;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.hero-text{
+    text-align: left;
+    max-width: 1000px;
+    line-height: 1.4;
+    color: #252B42;
+    font-size: 27px;
+}
+.illustration{
+    width:600px;
+    padding-left: 20px;
+    padding-top: 100px;
+}
+.hero-btn{
+    background: #00676C;
+    color: #FDFFEA;
+    font-size: 18px;
+    margin-top: 40px;
+    border: 0;
+    padding: 14px 25px;
+}
+.hero-big{
+    display:flex;
+    align-items: center;
+}
+.course-section{
+    width: 100%;
+    height: 100vh;
+}
