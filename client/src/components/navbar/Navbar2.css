@@ -1,0 +1,44 @@
+
+.logo {
+    width: 180px;
+}
+nav{
+    width: 100%;
+    background: #FDFFEA;
+    color: #333;
+    position: fixed;
+    padding: 4px 0;
+    top:0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 5px 20px;
+    font-size: 16px;
+}
+
+.navlogo{
+    display: inline-block;
+    margin: 5px 20px;
+    font-size: 20px;
+}
+
+.navprofile{
+    display: flex;
+    gap: 10px;
+    width: 20px;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+#nav-profilepic{
+    height:30px;
+}
+
