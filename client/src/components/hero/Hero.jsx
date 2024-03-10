@@ -56,7 +56,7 @@ const Hero = () => {
             <h1>Unlock Premium Features</h1>
             <p>Join our premium membership for exclusive courses and no ads!</p>
           </div>
-          <img src={illustration5} className="illustration"></img>
+          <img src={illustration5} className="illustration5"></img>
         </div>
       </div>
     </>

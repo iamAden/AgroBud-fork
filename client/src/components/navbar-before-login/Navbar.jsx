@@ -14,11 +14,12 @@ const Navbar = () => {
         <li>Rewards</li>
         <li>Premium</li>
         <li>
-          {/* <Link to="/login"> */}
-          <button className="btn">Login</button>
-          {/* </Link> */}
+          <Link to="/login">
+            <button className="btn">Login</button>
+          </Link>
         </li>
       </ul>
+      
     </nav>
   );
 };
