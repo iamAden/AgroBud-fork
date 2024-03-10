@@ -28,7 +28,7 @@ const Navbar2 = () => {
           </Link>
         </li>
         <li>
-        <Link to="/rewards">
+          <Link to="/rewards">
             <button className="invisible-btn">Rewards</button>
           </Link>
         </li>
@@ -36,10 +36,10 @@ const Navbar2 = () => {
           <Link to="/premium">
             <button className="invisible-btn">Premium</button>
           </Link>
-          </li>
+        </li>
         <li>
           <div className="navprofile">
-            <div style={{ fontWeight: "bold" }}>{name}</div>
+            <div id="nav-profilename">{name}</div>
             <img src={profile} id="nav-profilepic" alt="Profile Pic"></img>
           </div>
         </li>

@@ -1,0 +1,42 @@
+.explore-container{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 3px 3px #ededed;
+    cursor: pointer;
+}
+
+.explore-container:hover{
+    box-shadow: 5px 5px 6px 6px #dedede;
+}
+
+.explore-profile-name{
+    width: 300px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:10px;
+}
+
+.explore-title{
+    margin-top: 20px;
+    width: 300px;
+    text-align: justify;
+}
+
+.explore-profile-pic{
+    width: 30px;
+    height: 30px;
+}
+
+.explore-pic-crop{
+    width: 300px;
+    height: 350px;
+    object-fit: contain;
+    border-radius: 20px;
+    background-color: #f6f6f6;
+}
