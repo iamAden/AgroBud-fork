@@ -3,11 +3,12 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap:40px;
-    justify-content: space-between;
+    justify-content: center;
+    /* justify-content: space-between; */
 }
-
+/* 
 .explore-list-container::after{
     content:" ";
     /* gap:30px; */
-    flex: auto;
-}
+    /* flex: auto; */
+/* } */ 

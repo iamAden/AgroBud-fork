@@ -3,7 +3,8 @@ import Navbar2 from "./components/navbar/Navbar2";
 import SearchBar from "./components/search-bar/SearchBar";
 import ExploreList from "./components/explore-list/ExploreList";
 import chatbot from "./assets/chatbot-ic.png";
-import addExplore from "./assets/add-explore.png";
+import uploadExplore from "./assets/add-explore.png";
+import { Link } from "react-router-dom";
 import "./Community.css";
 
 const Community = () => {
@@ -19,12 +20,20 @@ const Community = () => {
       <div className="explore-content">
         <ExploreList />
         <div className="float-buttons">
-          <btn>
-            <img className="float-icon" src={chatbot} alt="ChatBot" />
-          </btn>
-          <btn>
-            <img className="float-icon" src={addExplore} alt="Add Post" />
-          </btn>
+          <Link to="/chatbot">
+            <btn>
+              <img className="float-icon" src={chatbot} alt="ChatBot" />
+            </btn>
+          </Link>
+          <Link to="/community/upload">
+            <btn>
+              <img
+                className="float-icon"
+                src={uploadExplore}
+                alt="Upload Explore"
+              />
+            </btn>
+          </Link>
         </div>
       </div>
     </div>
