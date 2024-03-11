@@ -1,0 +1,13 @@
+.explore-list-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:40px;
+    justify-content: space-between;
+}
+
+.explore-list-container::after{
+    content:" ";
+    /* gap:30px; */
+    flex: auto;
+}

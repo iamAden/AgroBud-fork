@@ -15,11 +15,10 @@ const Navbar = () => {
         <li>Premium</li>
         <li>
           <Link to="/login">
-            <button className="btn">Login</button>
+            <button className="nav-login-btn">Login</button>
           </Link>
         </li>
       </ul>
-      
     </nav>
   );
 };
