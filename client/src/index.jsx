@@ -9,19 +9,23 @@ import Courses from "./Courses";
 import Community from "./Community";
 import Rewards from "./Rewards.jsx";
 import Premium from "./Premium";
+import Chatbot from "./ChatBot.jsx";
+import UploadCommunity from "./UploadCommunity.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Router>
-        <Routes>
-          <Route exact path="/" element={<App/>} />
-          <Route  path="/login" element={<Login/>} />
-          <Route  path="/home" element={<Home/>} />
-          <Route  path="/courses" element={<Courses/>} />
-          <Route  path="/community" element={<Community/>} />
-          <Route  path="/rewards" element={<Rewards/>} />
-          <Route  path="/premium" element={<Premium/>} />
-        </Routes>
-      </Router>
+      <Routes>
+        <Route exact path="/" element={<App />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/courses" element={<Courses />} />
+        <Route path="/community" element={<Community />} />
+        <Route path="/rewards" element={<Rewards />} />
+        <Route path="/premium" element={<Premium />} />
+        <Route path="/chatbot" element={<Chatbot />} />
+        <Route path="/community/upload" element={<UploadCommunity />} />
+      </Routes>
+    </Router>
   </React.StrictMode>
 );
