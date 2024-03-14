@@ -1,0 +1,130 @@
+.reward{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.reward-header{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  /* gap:500px; */
+  position: absolute;
+  top:140px
+}
+#reward-title{
+    text-align: left;
+    color: #252B42;
+    font-size: 50px;
+    position: absolute;
+    left:8%;
+}
+.frame-1 {
+    position: absolute;
+    top: 200px;
+    background-color: white;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    margin-top: 20px;
+  }
+.frame-in-1{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+.frame-in-1 img {
+    margin-bottom: 5px;
+    object-fit: contain; 
+  }
+.frame-in-1 p {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+  }
+.frame-in-1 h2{
+    font-size: 50px;
+    color: #00676C;
+}
+#farmer-img img{
+    width: 300px;
+    height: auto;
+    object-fit: contain;
+}
+.frame-2{
+    border-radius: 15px;
+    width: 90%;
+    height: 65vh;
+    position: absolute;
+    top: 700px;
+    background-color: #00676C;
+    display: flex; 
+    align-items: center; 
+    margin-top: 20px;
+    flex-direction: column;
+}
+.title-reward p{
+    text-align: left; 
+    font-size: 30px; 
+    color: white; 
+    margin-top: 30px; 
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+
+.frame-promo{
+    position: absolute;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    margin-top: 100px;
+}
+
+.card-promo {
+    margin-right: 10px;
+    margin-left: 10px;
+    align-items: center;
+    flex-basis: 15%;
+    border-radius: 20px;
+    margin-bottom: 5%;
+    padding: 1px 10px;
+    box-sizing: border-box;
+    display: flex; 
+    flex-direction: column; 
+    background-color: white;
+  }
+.card-promo:hover{
+  box-shadow: 5px 5px 6px 6px #2f2f2f;
+}
+
+.card-promo img {
+    margin: 5%;
+    border-radius: 10%;
+    width: 190px;
+    height: auto;
+  }
+
+.require-coin {
+    display: flex; 
+    align-items: center; 
+}
+  
+  .require-coin img {
+    width: 40px;
+    margin-right: 10px; 
+    margin-top: 5px;
+  }
+  .require-coin p{
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
