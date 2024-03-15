@@ -1,4 +1,4 @@
-import React from "react";
+import React ,{useState} from "react";
 import "./Navbar2.css";
 import logowtext from "../../assets/logowithtext.png";
 import profile from "../../assets/profile-default.png";
@@ -7,11 +7,25 @@ import { Link } from "react-router-dom";
 const Navbar2 = () => {
   //default name
   let name = "User123";
+  const[menuOpen,setMenuOpen]=useState(false);
 
   return (
     <nav className="container">
       <img src={logowtext} className="logo" alt="" />
-      <ul>
+
+      <div 
+      className="menu" 
+      onClick={()=>{
+        setMenuOpen(!menuOpen);
+      }}
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+
+      <ul className={menuOpen?"open":""}>
         <li>
           <Link to="/home">
             <button className="invisible-btn">Home</button>
@@ -37,6 +51,9 @@ const Navbar2 = () => {
             <button className="invisible-btn">Premium</button>
           </Link>
         </li>
+
+      
+
         <li>
           <div className="navprofile">
             <div id="nav-profilename">{name}</div>

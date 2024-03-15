@@ -23,6 +23,7 @@ nav ul li{
     font-size: 16px;
     cursor: pointer;
     transition: all ease-in-out 300ms;
+
 }
 
 nav ul li:hover{
@@ -45,3 +46,57 @@ nav ul li:hover{
     transform: translate(0px, -2px);
     box-shadow: 0px 37px 20px -15px rgba(0,0,0,0.1);
 }
+
+.menu{
+    display:none;
+    position:absolute;
+    top:35px;
+    right:100px;
+    flex-direction: column;
+    flex-direction:space-between;
+    width:20px;
+    height:16px;
+    align-items: centre;
+  
+}
+.menu span{
+   height:20px;
+   width:100%;
+   background-color:black;
+   border-radius:0.2rem;
+   margin:1px;
+
+
+}
+
+nav ul.open{
+display:flex;
+}
+
+@media (max-width:1050px){
+    .menu{
+        display:flex;
+    }
+
+    nav{
+        flex-direction:column;
+        align-items: start;
+    }
+
+    nav ul{
+        display:none;
+        flex-direction:column;
+        width:100%;
+        margin-bottom: 0.25rem;
+    }
+
+    nav ul li{
+       width :100%;
+       text-align:end;
+    }
+
+}
+
+
+
+

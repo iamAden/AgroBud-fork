@@ -40,6 +40,7 @@ nav ul li{
     padding-bottom: 5px;
     cursor: pointer;
     transition: all ease-in-out 300ms;
+
 }
 
 .navprofile:hover{
@@ -66,6 +67,62 @@ nav ul li{
 .invisible-btn:hover{
     font-weight: bold;
     transform: translate(0px, -5px);
+}
+
+.menu{
+    display:none;
+    position:absolute;
+    top:35px;
+    right:100px;
+    flex-direction: column;
+    flex-direction:space-between;
+    width:20px;
+    height:16px;
+    align-items: centre;
+  
+}
+.menu span{
+   height:20px;
+   width:100%;
+   background-color:black;
+   border-radius:0.2rem;
+   margin:1px;
+
+
+}
+
+nav ul.open{
+display:flex;
+}
+
+@media (max-width:1050px){
+    .menu{
+        display:flex;
+    }
+
+    nav{
+        flex-direction:column;
+        align-items: start;
+    }
+
+    nav ul{
+        display:none;
+        flex-direction:column;
+        width:100%;
+        margin-bottom: 0.25rem;
+    }
+
+    nav ul li{
+       width :100%;
+       text-align:end;
+       align-items:end;
+    }
+
+    .navprofile {
+        margin-left: auto; /* This will push the nav profile to the right end*/
+        margin-right:70px;
+    } 
+
 }
 
 
