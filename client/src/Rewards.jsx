@@ -1,4 +1,6 @@
-import React from 'react';
+import React,{useState} from 'react';
+import Popup from 'reactjs-popup'
+import 'reactjs-popup/dist/index.css'
 import Navbar2 from './components/navbar/Navbar2';
 import "./Rewards.css";
 import { Link } from "react-router-dom";
@@ -11,6 +13,17 @@ import promo4 from "./assets/promo-4.png";
 import promo5 from "./assets/promo-5.png";
 
 const Rewards = () => {
+  const [isRedeemDropdownOpen, setIsRedeemDropdownOpen]=useState(false);
+  const [isTermsDropdownOpen, setIsTermsDropdownOpen]=useState(false);
+
+  const toggleRedeemDropdown = () => {
+    setIsRedeemDropdownOpen(!isRedeemDropdownOpen);
+  };
+
+  const toggleTermsDropdown = () => {
+    setIsTermsDropdownOpen(!isTermsDropdownOpen);
+  };
+
   return (
     <div className="reward">
       <Navbar2/>
@@ -36,13 +49,54 @@ const Rewards = () => {
           <p>Reward</p>
         </div>
         <div className='frame-promo'>
-          <button className='card-promo' id='card1'>
+          <Popup trigger={<button className='card-promo'>
               <img src={promo1} className="promo"></img>
             <div className='require-coin'>
               <img src={illustration1} className="illustration-small-coin"></img>
               <p>110</p>
             </div>
-          </button>
+          </button>} modal nested>
+          
+          {close => (
+            <div className='overlay'>
+              <div className='modalContainer'>
+                <img src={promo1} className="promo1"></img>
+                <div className="modalRight">
+                    <button className="close" onClick={close}>X</button>
+                      <div className="off-header"> 10% OFF an any handcrafted beverage purchase </div>
+                      <div className="off-content">
+                          <div className='dropdown-wrapper'>
+                            <button className='dropdown-button' onClick={toggleRedeemDropdown}>How to redeem</button>
+                            {isRedeemDropdownOpen && (
+                            <div className='dropdown-content'>
+                              Tap on Redeem. You will receive the voucher code. Please screenshot the code, once you tap OK, the code will not show again 
+                            </div>
+                            )}
+                        </div>
+
+                        <div className='dropdown-wrapper'>
+                            <button className='dropdown-button' onClick={toggleTermsDropdown}>Terms and Conditions</button>
+                            {isTermsDropdownOpen && (
+                            <div className='dropdown-content'>
+                             <ul>
+                              <li>This voucher is valid until 24 December 2024, 11.59pm</li>
+                              <li>Only valid for walk-in purchases at all brand stores</li>
+                              <li>Not valid with any other vouchers, promotions, and discounts</li>
+                              <li>The offer is not applicable to bottled drinks and seasonal drinks</li>
+                            </ul>
+                            </div>
+                            )}
+                        </div>
+                        
+                      </div>
+                      <div className="actions">
+                        <button className="BtnRedeem"> REDEEM </button>
+                      </div>
+                  </div>
+              </div>
+            </div>
+    )}
+          </Popup>
 
           <button className='card-promo'>
               <img src={promo2} className="promo"></img>

@@ -133,3 +133,93 @@
     font-size: 30px;
     margin-bottom: 20px;
   }
+  .overlay{
+    background-color: rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+  }
+  .modalContainer{
+    max-height: 500px;
+    max-width: 800px;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    background-color: white;
+    box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.75);
+  }
+  .promo1{
+    width: 400px;
+    object-fit: cover;
+  }
+  .modalRight{
+    width: 100%;
+  }
+.close{
+  position: fixed;
+  top: 8px;
+  right: 8px;
+  border: none;
+  background-color: white;
+  font-size: 15px; /* Adjust the font size as needed */
+  padding: 10px;
+}
+.off-header{
+  margin: 2rem;
+  font-weight: bold;
+  font-size: 25px;
+}
+.off-content{
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.BtnRedeem{
+  position: fixed;
+  bottom: 30px;
+  display: flex;
+  padding: 1rem 2rem;
+  border: none;
+  background-color: #00676C;
+  color: white;
+  border-radius: 15px;
+  margin-left: 2rem;
+}
+.BtnRedeem:hover{
+  background-color: #efefef;
+  border:2px solid black;
+  color: black;
+}
+.dropdown-button{
+  background-color: white;
+  font-size: 15px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 330px;
+  text-align: left;
+  margin: 5px;
+}
+.dropdown-content{
+  padding: 5px;
+  width: 330px;
+  max-height: 100px;
+  overflow-y: auto;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 13px;
+}
+
+.dropdown-content ul{
+  list-style-type: disc; /* Use bullet points */
+  padding-left: 20px; /* Add padding to align bullet points */
+  margin-top: 5px; /* Add margin to separate from other content */
+}
+
+.dropdown-content li {
+  margin-bottom: 5px; /* Add margin between list items */
+}
