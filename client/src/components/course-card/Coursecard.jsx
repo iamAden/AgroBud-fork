@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 function Coursecard({ id, title, imageSrc, tags, duration, progress }) {
     return (
-        <Link to={`/course/${id}`}>
+        <Link to={`/courses/${id}`}>
             <div className='course-container'>
                 <div className='course-img-container'>
                     <img src={imageSrc} alt={title} />

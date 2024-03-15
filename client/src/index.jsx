@@ -26,7 +26,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/premium" element={<Premium />} />
         <Route path="/chatbot" element={<Chatbot />} />
         <Route path="/community/upload" element={<UploadCommunity />} />
-        <Route path="/course/:id" element={<CoursePage/>} />
+        <Route path="/courses/:id" element={<CoursePage/>} />
       </Routes>
     </Router>
   </React.StrictMode>

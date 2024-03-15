@@ -1,15 +1,14 @@
 import React from 'react';
+import { useParams } from 'react-router-dom';
 
-const CoursePage = ({ match }) => {
-  const courseId = match.params.id;
-  // Fetch course details based on courseId and render them
+const CoursePage = () => {
+  const {id} = useParams();
   return (
     <div>
       <h2>Course Details</h2>
-      <p>Course ID: {courseId}</p>
-      {/* Render other course details here */}
+      <p>Course ID: {id}</p>
     </div>
   );
 }
 
-export default CoursePage;
+export default CoursePage
