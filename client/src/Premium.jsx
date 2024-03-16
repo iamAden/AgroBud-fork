@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar2 from './components/navbar/Navbar2'
 import "./Premium.css";
 import { Link } from "react-router-dom";
+import Footer from './components/Footer/Footer';
 
 const Premium = () => {
   return (
@@ -40,8 +41,9 @@ const Premium = () => {
           </div>
           <button className='btnSelect'>Select</button>
         </div>
-
+        
       </div>
+      <Footer/>
     </div>
   )
 }

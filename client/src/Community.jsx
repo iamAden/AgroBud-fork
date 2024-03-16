@@ -6,6 +6,7 @@ import chatbot from "./assets/chatbot-ic.png";
 import uploadExplore from "./assets/add-explore.png";
 import { Link } from "react-router-dom";
 import "./Community.css";
+import Footer from "./components/Footer/Footer";
 
 const Community = () => {
   return (
@@ -35,7 +36,9 @@ const Community = () => {
             </btn>
           </Link>
         </div>
+        
       </div>
+      <Footer/>
     </div>
   );
 };

@@ -4,10 +4,12 @@
     background-color: #fff;
     background-size: cover;
     background-position: center;
-    display: flex;
+    padding-bottom: 60px;
+    top: 60 px;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    
 }
 
 .explore-header{
@@ -37,8 +39,9 @@
 }
 
 .explore-content{
-    position: absolute;
+    /* position: absolute; */
     top: 210px;
+    padding-top: 210px;
     background-color: #fff;
     max-width: 100vw;
     /* display: flex;
@@ -57,6 +60,7 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    z-index: 3;
 }
 
 .float-icon{

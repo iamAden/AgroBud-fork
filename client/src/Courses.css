@@ -9,7 +9,7 @@
     max-width: 100;
 }
 .side-container{
-    width:300px;
+    width:230px;
     left:0;
     height: 100vh ;
     position:fixed;
@@ -21,7 +21,7 @@
     align-items: left;
     margin-top: 24px;
     background-color: #fff;
-    z-index: 50;
+    
     top: 80px;
 }
 /* .green-btn{
@@ -59,7 +59,7 @@
     height: auto;
     padding-top: 50px;
     background-color: #ffffff;
-    margin-left: 300px;
+    margin-left: 250px;
     padding-left: 40px;
     display:flex;
 }
@@ -94,8 +94,11 @@
 .title-container{
     position: relative;
 }
+.title-container p{
+    font-size: 23px;
+}
 .anchor{
     position: absolute;
-    top:-150px;
+    top:-90px;
     left: 0px;
 }
