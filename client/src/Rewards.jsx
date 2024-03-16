@@ -11,6 +11,7 @@ import promo2 from "./assets/promo-2.jpg";
 import promo3 from "./assets/promo-3.png";
 import promo4 from "./assets/promo-4.png";
 import promo5 from "./assets/promo-5.png";
+import Footer from './components/Footer/Footer';
 
 const Rewards = () => {
   const [isRedeemDropdownOpen, setIsRedeemDropdownOpen]=useState(false);
@@ -132,7 +133,7 @@ const Rewards = () => {
 
         </div>
       </div>
-
+      <Footer/>
     </div>
   )
 }

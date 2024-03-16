@@ -9,16 +9,18 @@ function Coursecard({ id, title, imageSrc, tags, duration, progress }) {
                 <div className='course-img-container'>
                     <img src={imageSrc} alt={title} />
                 </div>
-                <p>{title}</p>
-                <div className='course-tag-container'>
-                    {tags.map((tag, index) => (
-                        <div key={index} className='tag'>
-                            {tag}
-                        </div>
-                    ))}
-                </div>
-                <div className='info'>
-                    Duration: {duration} min left <br />Progress: {progress}%
+                <div className='course-not-img-container'>
+                    <p>{title}</p>
+                    <div className='course-tag-container'>
+                        {tags.map((tag, index) => (
+                            <div key={index} className='tag'>
+                                {tag}
+                            </div>
+                        ))}
+                    </div>
+                    <div className='info'>
+                        Duration: {duration} min left <br />Progress: {progress}%
+                    </div>
                 </div>
             </div>
         </Link>

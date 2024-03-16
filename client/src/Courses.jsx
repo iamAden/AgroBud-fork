@@ -2,6 +2,7 @@ import React from 'react';
 import "./Courses.css";
 import pestmanagement from "./assets/pestmanagement.jpg";
 import precisionagriculture from "./assets/precisionagriculture.jpg";
+import soil from "./assets/soil.jpg";
 import Footer from "./components/Footer/Footer";
 import Navbar2 from './components/navbar/Navbar2';
 import SearchBar from './components/search-bar/SearchBar';
@@ -18,14 +19,12 @@ const Courses = () => {
         <Navbar2/>
         <div className='main-container'>
             <div className='side-container'>
-                {/* <div>
-                    <button className='green-btn'>All Courses</button></div> */}
-                <div style={{ display: 'flex', flexDirection: 'column' }}>
+                
                     <a href="#pest-title" className='grey-btn'>Pest Management</a>
                     <a href='#ict-title' className='grey-btn'>ICT in Farming</a>
                     <a href='#biotech-title' className='grey-btn'>Biotechnology</a>
                     <a href='#soil-title' className='grey-btn'>Soil Management</a>
-                </div>
+                
             </div>
             
             <div className='bigger-side-container'>
@@ -142,6 +141,48 @@ const Courses = () => {
                         progress="0"
                     />
                 </div>
+
+                {/* <!-- Soil Section --> */}
+                <div className='title-container'>
+                    <a className='anchor' id="soil-title"></a>
+                    <p>Soil Management</p>
+                </div>
+
+                <div className='inner-container'>
+                    <Coursecard
+                        id="11"
+                        title="Soil Conservation"
+                        imageSrc={soil}
+                        tags={["Beginner", "Free", "Soil Management"]}
+                        duration="30"
+                        progress="0"
+                    />
+                    <Coursecard
+                        id="12"
+                        title="Soil Fertility Management"
+                        imageSrc={soil}
+                        tags={["Beginner", "Free", "Soil Management"]}
+                        duration="30"
+                        progress="0"
+                    />
+                    <Coursecard
+                        id="13"
+                        title="Crop Rotation"
+                        imageSrc={soil}
+                        tags={["Beginner", "Free", "Soil Management"]}
+                        duration="30"
+                        progress="0"
+                    />
+                    <Coursecard
+                        id="14"
+                        title="Soil Contamination Remediation"
+                        imageSrc={soil}
+                        tags={["Advanced", "Premium", "Soil Management"]}
+                        duration="30"
+                        progress="0"
+                    />
+                </div>
+
             </div>
             
             <div className="float-buttons">

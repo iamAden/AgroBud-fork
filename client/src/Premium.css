@@ -4,7 +4,6 @@
     background-color: #fff;
     background-size: cover;
     background-position: center;
-    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -27,11 +26,12 @@
     left:8%;
 }
 .premium-frame {
-    position: absolute;
+    /* position: absolute; */
+    height: 100vh;
     top: 200px;
     background-color: white;
     display: flex; 
-    justify-content: space-between; 
+    justify-content: center; 
     align-items: center; 
     margin-top: 50px;
   }

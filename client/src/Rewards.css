@@ -4,10 +4,11 @@
     background-color: #fff;
     background-size: cover;
     background-position: center;
-    display: flex;
+    /* display: flex; */
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding-bottom: 60px;
 }
 .reward-header{
   width: 100%;
@@ -16,24 +17,26 @@
   align-items: center;
   flex-direction: row;
   /* gap:500px; */
-  position: absolute;
-  top:140px
+  /* position: absolute; */
+  top:140px;
 }
 #reward-title{
     text-align: left;
     color: #252B42;
     font-size: 50px;
-    position: absolute;
+    /* position: absolute; */
     left:8%;
+    flex-direction: row;
 }
 .frame-1 {
-    position: absolute;
+    /* position: relative; */
     top: 200px;
     background-color: white;
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
     margin-top: 20px;
+    flex-direction: row;
   }
 .frame-in-1{
     display: flex; 
@@ -63,16 +66,16 @@
 }
 .frame-2{
     border-radius: 15px;
-    width:95%;
+    width:auto;
     min-height: auto;
-    position: absolute;
+    /* position: relative; */
     top: 700px;
     background-color: #00676C;
     display: flex; 
-    align-items: center; 
+    align-items: center;
     margin-top: 20px;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
 }
 .title-reward p{
     text-align: center; 
