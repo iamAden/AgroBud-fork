@@ -5,6 +5,7 @@ import precisionagriculture from "./assets/precisionagriculture.jpg";
 import chatbot from "./assets/chatbot-ic.png";
 import addCourse from "./assets/add-explore.png";
 import Footer from "./components/Footer/Footer";
+// type npm i react-router-dom
 import { Link } from "react-router-dom";
 
 import "./Home.css";
@@ -58,7 +59,13 @@ const Home = () => {
             />
           </div>
         </div>
-      
+        <div className="float-buttons">
+                <Link to="/chatbot">
+                    <btn>
+                        <img className="float-icon" src={chatbot} alt="ChatBot" />
+                    </btn>
+                </Link>
+            </div>
 
 
       </div>

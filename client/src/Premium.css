@@ -16,24 +16,23 @@
   align-items: center;
   flex-direction: row;
   /* gap:500px; */
-  position: absolute;
-  top:140px
+  position: relative;
+
 }
 #premium-title{
-    text-align: left;
+    text-align: center;
     color: #252B42;
     font-size: 50px;
-    position: absolute;
-    left:8%;
+    position: relative ;
+    margin-top:60px;
 }
 .premium-frame {
-    position: absolute;
-    top: 200px;
+    position: relative;
     background-color: white;
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
-    margin-top: 50px;
+    margin:50px auto;
   }
 
 .premium-content{
@@ -95,4 +94,14 @@
     border:2px solid black;
     color: black;
 }
+
+
+.premium-container{
+    background-image: none;
+    animation:none;
+    margin: 50px auto;
+
+}
+
+
 

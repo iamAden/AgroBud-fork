@@ -12,6 +12,8 @@ import Premium from "./Premium";
 import Chatbot from "./ChatBot.jsx";
 import UploadCommunity from "./UploadCommunity.jsx";
 import CoursePage from "./CoursePage.jsx";
+import Register from "./Register.jsx";
+import Hero from "./components/hero/Hero.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -27,6 +29,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/chatbot" element={<Chatbot />} />
         <Route path="/community/upload" element={<UploadCommunity />} />
         <Route path="/courses/:id" element={<CoursePage/>} />
+        <Route path="/register" element={<Register/>}/>
+        <Route path="/hero" element={<Hero/>}/>
       </Routes>
     </Router>
   </React.StrictMode>

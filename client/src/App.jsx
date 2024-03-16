@@ -8,12 +8,7 @@ import Footer from "./components/Footer/Footer";
 const App = () => {
   return (
     <div>
-      <Navbar 
-        homeId="home"
-        coursesId="courses"
-        communityId="community"
-        rewardId="reward"
-        premiumId="premium" />
+      <Navbar/>
       <Hero />
       <Footer/>
     </div>

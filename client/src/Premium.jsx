@@ -1,12 +1,14 @@
 import React from 'react'
 import Navbar2 from './components/navbar/Navbar2'
 import "./Premium.css";
+import Footer from "./components/Footer/Footer";
 import { Link } from "react-router-dom";
 
 const Premium = () => {
   return (
     <div className="premium">
       <Navbar2/>
+      <div className="premium-container">
       <div className='premium-header'>
         <h1 id="premium-title">Premium</h1>
       </div>
@@ -42,7 +44,10 @@ const Premium = () => {
         </div>
 
       </div>
+      </div>
+      <Footer/>
     </div>
+    
   )
 }
 

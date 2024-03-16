@@ -1,4 +1,5 @@
 import React,{useState} from 'react';
+//to run this code type npm install reactjs-popup
 import Popup from 'reactjs-popup'
 import 'reactjs-popup/dist/index.css'
 import Navbar2 from './components/navbar/Navbar2';
@@ -11,6 +12,7 @@ import promo2 from "./assets/promo-2.jpg";
 import promo3 from "./assets/promo-3.png";
 import promo4 from "./assets/promo-4.png";
 import promo5 from "./assets/promo-5.png";
+import Footer from "./components/Footer/Footer";
 
 const Rewards = () => {
   const [isRedeemDropdownOpen, setIsRedeemDropdownOpen]=useState(false);
@@ -132,7 +134,6 @@ const Rewards = () => {
 
         </div>
       </div>
-
     </div>
   )
 }

@@ -3,8 +3,9 @@ import "./Navbar.css";
 import Hero from "../../components/hero/Hero.jsx"
 import logowtext from "../../assets/logowithtext.png";
 import { Link } from "react-router-dom";
-
-const Navbar = ({ homeId, coursesId, communityId, rewardId, premiumId }) => {
+import { HashLink } from 'react-router-hash-link';
+//npm install react-router-hash-link in terminal
+const Navbar = () => {
 
   const[menuOpen,setMenuOpen]=useState(false);
   
@@ -24,11 +25,11 @@ const Navbar = ({ homeId, coursesId, communityId, rewardId, premiumId }) => {
 
 
       <ul className={menuOpen?"open":""}>
-        <li><a href={`#${homeId}`}>Home</a></li>
-        <li><a href={`#${coursesId}`}>Courses</a></li>
-        <li><a href={`#${communityId}`}>Community</a></li>
-        <li><a href={`#${rewardId}`}>Rewards</a></li>
-        <li><a href={`#${premiumId}`}>Premium</a></li>
+      <li><HashLink to="/#home">Home</HashLink></li>
+        <li><HashLink to="/#courses">Courses</HashLink></li>
+        <li><HashLink to="/#community">Community</HashLink></li>
+        <li><HashLink to="/#reward">Rewards</HashLink></li>
+        <li><HashLink to="/#premium">Premium</HashLink></li>
         <li>
           <Link to="/login">
             <button className="nav-login-btn">Login</button>
