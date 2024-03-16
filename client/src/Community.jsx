@@ -36,7 +36,9 @@ const Community = () => {
             </btn>
           </Link>
         </div>
+        
       </div>
+      <Footer/>
     </div>
   );
 };

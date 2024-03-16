@@ -4,7 +4,6 @@
     background-color: #fff;
     background-size: cover;
     background-position: center;
-    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -30,7 +29,7 @@
     position: relative;
     background-color: white;
     display: flex; 
-    justify-content: space-between; 
+    justify-content: center; 
     align-items: center; 
     margin:50px auto;
   }
