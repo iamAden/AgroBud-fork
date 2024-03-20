@@ -8,7 +8,6 @@ const Premium = () => {
   return (
     <div className="premium">
       <Navbar2/>
-      <div className="premium-container">
       <div className='premium-header'>
         <h1 id="premium-title">Premium</h1>
       </div>
@@ -43,7 +42,6 @@ const Premium = () => {
           <button className='btnSelect'>Select</button>
         </div>
         
-      </div>
       </div>
       <Footer/>
     </div>

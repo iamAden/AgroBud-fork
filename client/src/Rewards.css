@@ -4,18 +4,19 @@
     background-color: #fff;
     background-size: cover;
     background-position: center;
-    /* display: flex; */
+    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding-bottom: 60px;
 }
 .reward-header{
   width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
   flex-direction: row;
+  padding-top: 100px;
+  padding-left: 130px;
   /* gap:500px; */
   /* position: absolute; */
   top:140px;
@@ -33,7 +34,7 @@
     top: 200px;
     background-color: white;
     display: flex; 
-    justify-content: space-between; 
+    justify-content: center; 
     align-items: center; 
     margin-top: 20px;
     flex-direction: row;
@@ -67,6 +68,7 @@
 .frame-2{
     border-radius: 15px;
     width:auto;
+    margin:100px;
     min-height: auto;
     /* position: relative; */
     top: 700px;
@@ -89,11 +91,11 @@
 
 .frame-promo{
     flex: 1; /* Allow frame-promo to grow to fill remaining space */
-    width: 100%; /* Ensure frame-promo fills the container */
-    max-width: 1200px; /* Set maximum width */
+    width: auto; /* Ensure frame-promo fills the container */
+    /* max-width: auto; Set maximum width */
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     flex-wrap: wrap;
     gap: 5px;
 }
@@ -110,6 +112,7 @@
     display: flex; 
     flex-direction: column; 
     background-color: white;
+    cursor: pointer;
   }
 .card-promo:hover{
   box-shadow: 5px 5px 6px 6px #2f2f2f;
