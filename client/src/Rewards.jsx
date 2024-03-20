@@ -53,7 +53,7 @@ const Rewards = () => {
         <div className='frame-promo'>
           <Popup trigger={<button className='card-promo'>
               <img src={promo1} className="promo"></img>
-            <div className='require-coin'>
+              <div className='require-coin'>
               <img src={illustration1} className="illustration-small-coin"></img>
               <p>110</p>
             </div>
