@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar2 from './components/navbar/Navbar2'
 import "./Premium.css";
 import Footer from "./components/Footer/Footer";
-import { Link } from "react-router-dom";
+import Chatbot from './components/chatbot/Chatbot';
 
 const Premium = () => {
   return (
@@ -43,6 +43,9 @@ const Premium = () => {
         </div>
         
       </div>
+      <div className="float-buttons">
+            <Chatbot/>
+        </div>
       <Footer/>
     </div>
     

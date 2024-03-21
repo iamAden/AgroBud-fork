@@ -13,6 +13,7 @@ import promo3 from "./assets/promo-3.png";
 import promo4 from "./assets/promo-4.png";
 import promo5 from "./assets/promo-5.png";
 import Footer from './components/Footer/Footer';
+import Chatbot from './components/chatbot/Chatbot';
 
 const Rewards = () => {
   const [isRedeemDropdownOpen, setIsRedeemDropdownOpen]=useState(false);
@@ -134,6 +135,9 @@ const Rewards = () => {
 
         </div>
       </div>
+      <div className="float-buttons">
+            <Chatbot/>
+        </div>
       <Footer/>
     </div>
   )
