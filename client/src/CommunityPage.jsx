@@ -14,7 +14,6 @@ const CommunityPage = () => {
   return (
     <>
       <Navbar2 />
-      {/* <div className="com-page-main"> */}
       <Link to="/community">
         <button id="back-to-com">
           <img id="back-icon" src={back} />

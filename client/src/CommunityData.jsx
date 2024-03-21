@@ -19,7 +19,7 @@ const CommunityData = [
     username: "Farmer Steve",
     pic: explorePic3,
     title: "Look at my GIANT PUMPKIN!!!",
-    desc: "Check out my incredible giant pumpkin! No exaggeration, just pure pumpkin power! #nocap #pumpkin",
+    desc: "Check out my incredible giant pumpkin! No exaggeration, just pure pumpkin power! Btw my cat's name is Pumpkin uwu #nocap #pumpkin",
   },
   {
     id: 3,

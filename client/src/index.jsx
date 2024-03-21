@@ -11,7 +11,6 @@ import UploadCommunity from "./UploadCommunity.jsx";
 import CommunityPage from "./CommunityPage.jsx";
 import Rewards from "./Rewards.jsx";
 import Premium from "./Premium";
-// import Chatbot from "./ChatBot.jsx";
 import CoursePage from "./CoursePage.jsx";
 import Register from "./Register.jsx";
 import Hero from "./components/hero/Hero.jsx";
