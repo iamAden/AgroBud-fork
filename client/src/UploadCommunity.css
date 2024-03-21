@@ -1,0 +1,88 @@
+
+#upload-title{
+    position: relative;
+    font-size: 50px;
+    top: 53px;
+    left: 190px;
+    width: 80vw;
+}
+
+
+#upload-form{
+    position: relative;
+    top: 70px;
+    display:flex;
+    flex-direction: row;
+    /* background-color: rgb(230, 215, 250); */
+    gap:100px;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+#custom-file-upload-btn {
+    background-color: #00676C;
+    border: 2px solid #00676C;
+    color: #FDFFEA; 
+    border-radius: 20px;
+    padding: 18px 28px;
+    cursor: pointer;
+    /* margin-top:30px; */
+    margin-bottom: 15px;
+}
+
+#custom-file-upload-btn:hover{
+    background-color: #efefef;
+    border:2px solid black;
+    color: black;
+}
+
+
+#preview-image{
+    height:400px;
+    width: 450px;
+    object-fit: contain;
+}
+
+#select-image{
+    /* background-color: #aaecf0; */
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+
+#title-desc-submit{
+    position: relative;
+    background-color: #f0f0f0;
+    display:flex;
+    flex-direction: column;
+    border-radius: 20px;
+    padding-bottom: 20px;
+}
+
+.com-label{
+    margin: 20px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+
+.com-input{
+    width: 600px;
+    margin:20px;
+    padding: 10px;
+}
+
+#submit-btn{
+    position: relative;
+    left: 460px;
+    bottom: 0px;
+    cursor: pointer;
+    margin-top: 40px;
+    width: 150px;
+}

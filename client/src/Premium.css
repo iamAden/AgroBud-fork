@@ -94,6 +94,7 @@
     text-align: center;
     margin: 10px;
     border: 2px solid transparent;
+    cursor: pointer;
 }
 .btnSelect:hover{
     background-color: #efefef;

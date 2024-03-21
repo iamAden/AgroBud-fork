@@ -4,9 +4,10 @@ import SearchBar from "./components/search-bar/SearchBar";
 import ExploreList from "./components/explore-list/ExploreList";
 import uploadExplore from "./assets/add-explore.png";
 import { Link } from "react-router-dom";
-import "./Community.css";
 import Footer from "./components/Footer/Footer";
+import ComData from "./CommunityData";
 import Chatbot from "./components/chatbot/Chatbot";
+import "./Community.css";
 
 const Community = () => {
   return (
@@ -19,14 +20,8 @@ const Community = () => {
         </div>
       </div>
       <div className="explore-content">
-        <ExploreList />
+        <ExploreList data={ComData} />
         <div className="float-buttons">
-          {/* <Link to="/chatbot">
-            <btn>
-              <img className="float-icon" src={chatbot} alt="ChatBot" />
-            </btn>
-          </Link> */}
-          <Chatbot/>
           <Link to="/community/upload">
             <btn>
               <img
@@ -36,10 +31,10 @@ const Community = () => {
               />
             </btn>
           </Link>
+          <Chatbot />
         </div>
-        
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

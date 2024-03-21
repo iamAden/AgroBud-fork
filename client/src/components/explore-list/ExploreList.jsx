@@ -1,20 +1,23 @@
 import React from "react";
-import { useState } from "react";
 import ExploreItem from "../explore-item/ExploreItem";
+import { Link } from "react-router-dom";
 import "./ExploreList.css";
 
-const ExploreList = () => {
-  const [query, setQuery] = useState("");
+const ExploreList = ({ data }) => {
+  const exploreItems = data.map((item) => {
+    return (
+      <ExploreItem
+        id={item.id}
+        pfp={item.pfp}
+        username={item.username}
+        pic={item.pic}
+        title={item.title}
+        desc={item.desc}
+      />
+    );
+  });
 
-  return (
-    <div class="explore-list-container">
-      <ExploreItem />
-      <ExploreItem />
-      <ExploreItem />
-      <ExploreItem />
-      <ExploreItem />
-    </div>
-  );
+  return <div class="explore-list-container">{exploreItems}</div>;
 };
 
 export default ExploreList;
