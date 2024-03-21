@@ -12,7 +12,6 @@ import CommunityPage from "./CommunityPage.jsx";
 import Rewards from "./Rewards.jsx";
 import Premium from "./Premium";
 import Lesson from "./Lesson.jsx";
-import UploadCommunity from "./UploadCommunity.jsx";
 import CoursePage from "./CoursePage.jsx";
 import Register from "./Register.jsx";
 import Hero from "./components/hero/Hero.jsx";
@@ -30,7 +29,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/community/upload" element={<UploadCommunity />} />
         <Route path="/rewards" element={<Rewards />} />
         <Route path="/premium" element={<Premium />} />
-        <Route path="/community/upload" element={<UploadCommunity />} />
         <Route path="/courses/:id" element={<CoursePage/>} />
         <Route path="/register" element={<Register/>}/>
         <Route path="/hero" element={<Hero/>}/>
