@@ -55,6 +55,66 @@ nav ul li{
     font-weight: bold;
 }
 
+.navprofile-popup{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.popup-buttons{
+    display: flex;
+    flex-direction: row;
+    gap:40px;
+    margin: 20px;
+    margin-top: 50px;
+}
+
+#cancel-button{
+    border: 2px solid transparent;
+    border-radius: 20px;
+    border-color: #00676C;
+    background-color: #ededed;
+    color: #00676C;
+    font-size: 18px;
+    padding: 14px 10px;
+    width: 150px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+#cancel-button:hover{
+    background-color: #efefef;
+    border:2px solid black;
+    color: black;
+    font-weight: bold;
+
+}
+
+#yes-button{
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background-color: #00676C;
+    color: #FDFFEA;
+    font-size: 18px;
+    padding: 14px 10px;
+    width: 150px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+#yes-button:hover{
+    background-color: #efefef;
+    border:2px solid black;
+    color: black;
+    font-weight: bold;
+}
+
 .invisible-btn{
     border: none;
     background-color: #FDFFEA;
@@ -79,16 +139,14 @@ nav ul li{
     width:20px;
     height:16px;
     align-items: centre;
-  
 }
+
 .menu span{
    height:20px;
    width:100%;
    background-color:black;
    border-radius:0.2rem;
    margin:1px;
-
-
 }
 
 nav ul.open{
