@@ -22,12 +22,6 @@ const Community = () => {
       <div className="explore-content">
         <ExploreList data={ComData} />
         <div className="float-buttons">
-          {/* <Link to="/chatbot">
-            <btn>
-              <img className="float-icon" src={chatbot} alt="ChatBot" />
-            </btn>
-          </Link> */}
-          <Chatbot />
           <Link to="/community/upload">
             <btn>
               <img
@@ -37,6 +31,12 @@ const Community = () => {
               />
             </btn>
           </Link>
+          {/* <Link to="/chatbot">
+            <btn>
+              <img className="float-icon" src={chatbot} alt="ChatBot" />
+            </btn>
+          </Link> */}
+          <Chatbot />
         </div>
       </div>
       <Footer />
