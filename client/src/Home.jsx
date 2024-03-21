@@ -7,8 +7,10 @@ import addCourse from "./assets/add-explore.png";
 import Footer from "./components/Footer/Footer";
 // type npm i react-router-dom
 import { Link } from "react-router-dom";
+import courseData from './CourseData';
 
 import "./Home.css";
+import Chatbot from './components/chatbot/Chatbot';
 const Home = () => {
   return (
     <div>
@@ -25,18 +27,19 @@ const Home = () => {
           </div>
           <div className='inner-container'>
           <Coursecard
-                        id="11"
-                        title="AI with Agriculture"
-                        imageSrc={precisionagriculture}
-                        tags={["Beginner", "Free", "ICT in farming"]}
-                        duration="15"
-                        progress="50"
+              id={courseData[1].id}
+              title={courseData[1].title}
+              imageSrc={courseData[1].imageSrc}
+              tags={courseData[1].tags}
+              status={courseData[1].status}
+              length={courseData[1].length}
+              progress={courseData[1].progress}
             />
 
           <Link to={`/Courses`}>
             <div className='add-container'>
                 <img src={addCourse} alt="Add Course" id="addCourseIcon"/>
-                <p id="addCourseText">Add Course</p>
+                <p id="addCourseText">More Course</p>
             </div>
           </Link>
           </div>
@@ -48,21 +51,18 @@ const Home = () => {
           </div>
           <div className='inner-container'>
           <Coursecard
-                        id="12"
+                        id="16"
                         title="AI Trends in Agriculture"
                         imageSrc={precisionagriculture}
                         tags={["Beginner", "Free", "ICT in farming"]}
-                        duration="0"
+                        status="Completed"
+                        length="0 hours"
                         progress="100"
             />
           </div>
         </div>
         <div className="float-buttons">
-                <Link to="/chatbot">
-                    <btn>
-                        <img className="float-icon" src={chatbot} alt="ChatBot" />
-                    </btn>
-                </Link>
+                <Chatbot/>
             </div>
 
 

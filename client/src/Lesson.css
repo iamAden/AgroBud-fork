@@ -1,0 +1,107 @@
+/* .progress-bar-container{
+    background-color: rgb(214, 214, 214);
+    border-radius: 13px;
+    height: 10px;
+    width: 500px;
+    margin-right: 10px;
+}
+.progress-bar{
+    background-color: #00676C;
+    color: #fff;
+
+} */
+.main-lesson{
+    height: 100vh auto;
+    width: 100%;
+    padding-top: 90px;
+    flex-direction: row;
+    display: flex;
+    margin-bottom: 60px;
+}
+.grey-btn{
+    border: none;
+    background-color: rgb(234, 234, 234);
+    color: #333;
+    font-size: 16px;
+    padding: 14px 25px;
+    width: 200px;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.grey-btn:hover {
+    background-color: rgb(198, 198, 198);
+}
+.side-chapters{
+    width:fit-content;
+    left:0;
+    height: 100vh ;
+    /* position:fixed; */
+    background-color: #fff;
+    flex-direction: column;
+    padding: 20px 40px;
+    align-items: left;
+    top: 80px;
+}
+.the-bigger-container{
+    background-color: #fff;
+}
+.progress-percentage{
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    justify-content: center;
+}
+.percentage{
+    width: 300px;
+    padding-left: 10px;
+}
+.thumbnail{
+    height:500px;
+    width: 1200px;
+    display: flex;
+    overflow: hidden;
+}
+.thumbnail img{
+    cursor: pointer;
+    object-fit: fill;
+}
+.green-btn-lesson{
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background-color: #00676C;
+    color: #FDFFEA;
+    font-size: 18px;
+    padding: 14px 25px;
+    width: 130px;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.green-btn-lesson:hover{
+    background-color: #efefef;
+    border:2px solid black;
+    color: black;
+}
+
+.done-button{
+    margin-left: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content:center ;
+    align-items: center;
+}
+.arrow-btn{
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color:#fff;
+    border-radius: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.arrow-btn:hover{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
