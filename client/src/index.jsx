@@ -9,7 +9,7 @@ import Courses from "./Courses";
 import Community from "./Community";
 import Rewards from "./Rewards.jsx";
 import Premium from "./Premium";
-import Chatbot from "./ChatBot.jsx";
+// import Chatbot from "./ChatBot.jsx";
 import UploadCommunity from "./UploadCommunity.jsx";
 import CoursePage from "./CoursePage.jsx";
 import Register from "./Register.jsx";
@@ -26,7 +26,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/community" element={<Community />} />
         <Route path="/rewards" element={<Rewards />} />
         <Route path="/premium" element={<Premium />} />
-        <Route path="/chatbot" element={<Chatbot />} />
+        {/* <Route path="/chatbot" element={<Chatbot />} /> */}
         <Route path="/community/upload" element={<UploadCommunity />} />
         <Route path="/courses/:id" element={<CoursePage/>} />
         <Route path="/register" element={<Register/>}/>

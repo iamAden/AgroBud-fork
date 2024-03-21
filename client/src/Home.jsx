@@ -13,8 +13,6 @@ const Home = () => {
   return (
     <div>
       <Navbar2/>
-
-
       <div className="home-container">
         <div className="home-header">
            <h1 id="home-title">My Courses</h1>

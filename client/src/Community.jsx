@@ -2,11 +2,11 @@ import React from "react";
 import Navbar2 from "./components/navbar/Navbar2";
 import SearchBar from "./components/search-bar/SearchBar";
 import ExploreList from "./components/explore-list/ExploreList";
-import chatbot from "./assets/chatbot-ic.png";
 import uploadExplore from "./assets/add-explore.png";
 import { Link } from "react-router-dom";
 import "./Community.css";
 import Footer from "./components/Footer/Footer";
+import Chatbot from "./components/chatbot/Chatbot";
 
 const Community = () => {
   return (
@@ -21,11 +21,12 @@ const Community = () => {
       <div className="explore-content">
         <ExploreList />
         <div className="float-buttons">
-          <Link to="/chatbot">
+          {/* <Link to="/chatbot">
             <btn>
               <img className="float-icon" src={chatbot} alt="ChatBot" />
             </btn>
-          </Link>
+          </Link> */}
+          <Chatbot/>
           <Link to="/community/upload">
             <btn>
               <img

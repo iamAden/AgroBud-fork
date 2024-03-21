@@ -2,7 +2,7 @@ import React from 'react';
 import './Coursecard.css';
 import { Link } from 'react-router-dom';
 
-function Coursecard({ id, title, imageSrc, tags, duration, progress }) {
+function Coursecard({ id, title, imageSrc, tags, length, progress }) {
     return (
         <Link to={`/courses/${id}`}>
             <div className='course-container'>
@@ -19,7 +19,7 @@ function Coursecard({ id, title, imageSrc, tags, duration, progress }) {
                         ))}
                     </div>
                     <div className='info'>
-                        Duration: {duration} min left <br />Progress: {progress}%
+                        Length: {length} left <br />Progress: {progress}%
                     </div>
                 </div>
             </div>

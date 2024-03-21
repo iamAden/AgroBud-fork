@@ -1,11 +1,7 @@
 .main-container{
-    height: 100vh auto;
-    align-items: center;
-    justify-content: center;
-    flex-direction:row;
-    top: 60px;
-    position: relative;
-    max-width: 100;
+    height: 100vh;
+    /* position: relative; */
+    max-width: 100vw;
 }
 .side-container{
     width:230px;
@@ -68,8 +64,8 @@
 }
 .description{
     font-size: 20px;
-    /* background-color: #CCE5E7; */
-    background-color: #fff;
+    background-color: #CCE5E7;
+    /* background-color: #fff; */
     padding: 15px;
     border-radius: 13px;
 }
@@ -99,7 +95,26 @@
     border-radius: 15px;
     font-size: 40px;
     text-align: center;
-
     max-width: 500px;
     max-height: 200px;
+    
+}
+.chapters-container{
+    padding: 10px 0px;
+    
+}
+.chapter{
+    background-color: #919191;
+    color: #fff;
+    margin: 5px;
+    padding: 2px
+}
+.float-buttons{
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 3;
 }

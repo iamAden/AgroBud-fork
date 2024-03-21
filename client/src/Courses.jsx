@@ -6,8 +6,7 @@ import soil from "./assets/soil.jpg";
 import Footer from "./components/Footer/Footer";
 import Navbar2 from './components/navbar/Navbar2';
 import SearchBar from './components/search-bar/SearchBar';
-import Chatbot from './ChatBot';
-import chatbot from "./assets/chatbot-ic.png";
+import Chatbot from './components/chatbot/Chatbot';
 import { Link } from "react-router-dom";
 import biotech from "./assets/biotech.jpg";
 import Coursecard from './components/course-card/Coursecard';
@@ -47,7 +46,7 @@ const Courses = () => {
                         title="Harmful Pests"
                         imageSrc={pestmanagement}
                         tags={["Beginner", "Free", "Pest Management"]}
-                        duration="30"
+                        length="30"
                         progress="0"
                     />
                     <Coursecard
@@ -55,7 +54,7 @@ const Courses = () => {
                         title="Habitat Management"
                         imageSrc={pestmanagement}
                         tags={["Beginner", "Free", "Pest Management"]}
-                        duration="30"
+                        length="30"
                         progress="0"
                     />
                     <Coursecard
@@ -63,7 +62,7 @@ const Courses = () => {
                         title="Plant Pathology"
                         imageSrc={pestmanagement}
                         tags={["Intermediate", "Free", "Pest Management"]}
-                        duration="30"
+                        length="30"
                         progress="0"
                     />
                     <Coursecard
@@ -71,7 +70,7 @@ const Courses = () => {
                         title="Semiochemistry"
                         imageSrc={pestmanagement}
                         tags={["Advanced", "Premium", "Pest Management"]}
-                        duration="30"
+                        length="30"
                         progress="0"
                     />
                 </div>
@@ -88,7 +87,7 @@ const Courses = () => {
                         title="Precision Agriculture"
                         imageSrc={precisionagriculture}
                         tags={["Beginner", "Free", "ICT in farming"]}
-                        duration="30"
+                        length="30"
                         progress="0"
                     />
                     <Coursecard
@@ -96,7 +95,7 @@ const Courses = () => {
                         title="Drones in Agriculture"
                         imageSrc={precisionagriculture}
                         tags={["Beginner", "Free", "ICT in farming"]}
-                        duration="30"
+                        length="30"
                         progress="0"
                     />
                 </div>
@@ -113,7 +112,7 @@ const Courses = () => {
                         title="Plant Genetics"
                         imageSrc={biotech}
                         tags={["Beginner", "Free", "Biotechnology"]}
-                        duration="30"
+                        length="30"
                         progress="0"
                     />
                     <Coursecard
@@ -121,7 +120,7 @@ const Courses = () => {
                         title="Cross Cultivation"
                         imageSrc={biotech}
                         tags={["Beginner", "Free", "Biotechnology"]}
-                        duration="30"
+                        length="30"
                         progress="0"
                     />
                     <Coursecard
@@ -129,7 +128,7 @@ const Courses = () => {
                         title="Cloning"
                         imageSrc={biotech}
                         tags={["Advanced", "Premium", "Biotechnology"]}
-                        duration="30"
+                        length="30"
                         progress="0"
                     />
                     <Coursecard
@@ -137,7 +136,7 @@ const Courses = () => {
                         title="Genome Editing"
                         imageSrc={biotech}
                         tags={["Advanced", "Premium", "Biotechnology"]}
-                        duration="30"
+                        length="30"
                         progress="0"
                     />
                 </div>
@@ -154,7 +153,7 @@ const Courses = () => {
                         title="Soil Conservation"
                         imageSrc={soil}
                         tags={["Beginner", "Free", "Soil Management"]}
-                        duration="30"
+                        length="30"
                         progress="0"
                     />
                     <Coursecard
@@ -162,7 +161,7 @@ const Courses = () => {
                         title="Soil Fertility Management"
                         imageSrc={soil}
                         tags={["Beginner", "Free", "Soil Management"]}
-                        duration="30"
+                        length="30"
                         progress="0"
                     />
                     <Coursecard
@@ -170,7 +169,7 @@ const Courses = () => {
                         title="Crop Rotation"
                         imageSrc={soil}
                         tags={["Beginner", "Free", "Soil Management"]}
-                        duration="30"
+                        length="30"
                         progress="0"
                     />
                     <Coursecard
@@ -178,7 +177,7 @@ const Courses = () => {
                         title="Soil Contamination Remediation"
                         imageSrc={soil}
                         tags={["Advanced", "Premium", "Soil Management"]}
-                        duration="30"
+                        length="30"
                         progress="0"
                     />
                 </div>
@@ -186,15 +185,10 @@ const Courses = () => {
             </div>
             
             <div className="float-buttons">
-                <Link to="/chatbot">
-                    <btn>
-                        <img className="float-icon" src={chatbot} alt="ChatBot" />
-                    </btn>
-                </Link>
+                <Chatbot/>
             </div>
-            
+            <Footer/>
         </div>
-        <Footer/>
     </div>
   )
 }

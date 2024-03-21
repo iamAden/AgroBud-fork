@@ -175,6 +175,7 @@
   background-color: white;
   font-size: 15px; /* Adjust the font size as needed */
   padding: 10px;
+  cursor: pointer;
 }
 .off-header{
   margin: 2rem;
@@ -197,6 +198,7 @@
   color: white;
   border-radius: 15px;
   margin-left: 2rem;
+  cursor: pointer;
 }
 .BtnRedeem:hover{
   background-color: #efefef;
@@ -211,6 +213,7 @@
   width: 330px;
   text-align: left;
   margin: 5px;
+  cursor: pointer;
 }
 .dropdown-content{
   padding: 5px;
@@ -220,6 +223,7 @@
   background-color: white;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   font-size: 13px;
+  cursor: pointer;
 }
 
 .dropdown-content ul{
