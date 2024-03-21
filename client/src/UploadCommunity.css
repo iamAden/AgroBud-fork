@@ -59,20 +59,22 @@ input[type="file"] {
 
 #title-desc-submit{
     position: relative;
-    /* background-color: #FDFFEA; */
+    background-color: #f0f0f0;
     display:flex;
     flex-direction: column;
+    border-radius: 20px;
+    padding-bottom: 20px;
 }
 
 .com-label{
-    margin: 10px;
+    margin: 20px;
     margin-bottom: 0px;
     margin-top: 20px;
 }
 
 .com-input{
     width: 600px;
-    margin:10px;
+    margin:20px;
     padding: 10px;
 }
 
