@@ -7,10 +7,11 @@ import Login from "./Login";
 import Home from "./Home";
 import Courses from "./Courses";
 import Community from "./Community";
+import UploadCommunity from "./UploadCommunity.jsx";
+import CommunityPage from "./CommunityPage.jsx";
 import Rewards from "./Rewards.jsx";
 import Premium from "./Premium";
 // import Chatbot from "./ChatBot.jsx";
-import UploadCommunity from "./UploadCommunity.jsx";
 import CoursePage from "./CoursePage.jsx";
 import Register from "./Register.jsx";
 import Hero from "./components/hero/Hero.jsx";
@@ -24,13 +25,13 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/home" element={<Home />} />
         <Route path="/courses" element={<Courses />} />
         <Route path="/community" element={<Community />} />
+        <Route path="/community/:id" element={<CommunityPage />} />
+        <Route path="/community/upload" element={<UploadCommunity />} />
         <Route path="/rewards" element={<Rewards />} />
         <Route path="/premium" element={<Premium />} />
-        {/* <Route path="/chatbot" element={<Chatbot />} /> */}
-        <Route path="/community/upload" element={<UploadCommunity />} />
-        <Route path="/courses/:id" element={<CoursePage/>} />
-        <Route path="/register" element={<Register/>}/>
-        <Route path="/hero" element={<Hero/>}/>
+        <Route path="/courses/:id" element={<CoursePage />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/hero" element={<Hero />} />
       </Routes>
     </Router>
   </React.StrictMode>
