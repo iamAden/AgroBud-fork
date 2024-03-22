@@ -1,12 +1,11 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-to see the webapp, open repo in vsc, open the terminal, run:
-```npm install``` (for the first time only)
+# AgroBud 🌱
+## By Team Farmer Steve
+### Made using React Js
+### Features
+- Online courses
+- Reward system
+- Community page
+### Try it yourself !
+To see the webapp, open repo in vsc, open the terminal, run:
+```npm install``` 
 ```npm run dev```

@@ -11,12 +11,13 @@ import { Link } from "react-router-dom";
 import biotech from "./assets/biotech.jpg";
 import Coursecard from './components/course-card/Coursecard';
 import CoursePage from './CoursePage';
+import courseData from './CourseData';
 
 const Courses = () => {
   return (
     <div>
         <Navbar2/>
-        <div className='main-container'>
+        <div className='main-container-course'>
             <div className='side-container'>
                 
                     <a href="#pest-title" className='grey-btn'>Pest Management</a>
@@ -42,19 +43,21 @@ const Courses = () => {
 
                 <div className='inner-container'>
                     <Coursecard
-                        id="1"
-                        title="Harmful Pests"
-                        imageSrc={pestmanagement}
-                        tags={["Beginner", "Free", "Pest Management"]}
-                        length="30"
-                        progress="0"
+                        id={courseData[0].id}
+                        title={courseData[0].title}
+                        imageSrc={courseData[0].imageSrc}
+                        tags={courseData[0].tags}
+                        status={courseData[0].status}
+                        length={courseData[0].length}
+                        progress={courseData[0].progress}
                     />
                     <Coursecard
                         id="2"
                         title="Habitat Management"
                         imageSrc={pestmanagement}
                         tags={["Beginner", "Free", "Pest Management"]}
-                        length="30"
+                        status='Not enrolled'
+                        length="13 hours"
                         progress="0"
                     />
                     <Coursecard
@@ -62,7 +65,8 @@ const Courses = () => {
                         title="Plant Pathology"
                         imageSrc={pestmanagement}
                         tags={["Intermediate", "Free", "Pest Management"]}
-                        length="30"
+                        status='Not enrolled'
+                        length="10 hours"
                         progress="0"
                     />
                     <Coursecard
@@ -70,7 +74,8 @@ const Courses = () => {
                         title="Semiochemistry"
                         imageSrc={pestmanagement}
                         tags={["Advanced", "Premium", "Pest Management"]}
-                        length="30"
+                        status='Not enrolled'
+                        length="11 hours"
                         progress="0"
                     />
                 </div>
@@ -87,7 +92,8 @@ const Courses = () => {
                         title="Precision Agriculture"
                         imageSrc={precisionagriculture}
                         tags={["Beginner", "Free", "ICT in farming"]}
-                        length="30"
+                        status='Not enrolled'
+                        length="12 hours"
                         progress="0"
                     />
                     <Coursecard
@@ -95,7 +101,8 @@ const Courses = () => {
                         title="Drones in Agriculture"
                         imageSrc={precisionagriculture}
                         tags={["Beginner", "Free", "ICT in farming"]}
-                        length="30"
+                        status='Not enrolled'
+                        length="12 hours"
                         progress="0"
                     />
                 </div>
@@ -112,7 +119,8 @@ const Courses = () => {
                         title="Plant Genetics"
                         imageSrc={biotech}
                         tags={["Beginner", "Free", "Biotechnology"]}
-                        length="30"
+                        status='Not enrolled'
+                        length="10 hours"
                         progress="0"
                     />
                     <Coursecard
@@ -120,7 +128,8 @@ const Courses = () => {
                         title="Cross Cultivation"
                         imageSrc={biotech}
                         tags={["Beginner", "Free", "Biotechnology"]}
-                        length="30"
+                        status='Not enrolled'
+                        length="12 hours"
                         progress="0"
                     />
                     <Coursecard
@@ -128,7 +137,8 @@ const Courses = () => {
                         title="Cloning"
                         imageSrc={biotech}
                         tags={["Advanced", "Premium", "Biotechnology"]}
-                        length="30"
+                        status='Not enrolled'
+                        length="12 hours"
                         progress="0"
                     />
                     <Coursecard
@@ -136,7 +146,8 @@ const Courses = () => {
                         title="Genome Editing"
                         imageSrc={biotech}
                         tags={["Advanced", "Premium", "Biotechnology"]}
-                        length="30"
+                        status='Not enrolled'
+                        length="12 hours"
                         progress="0"
                     />
                 </div>
@@ -153,7 +164,8 @@ const Courses = () => {
                         title="Soil Conservation"
                         imageSrc={soil}
                         tags={["Beginner", "Free", "Soil Management"]}
-                        length="30"
+                        status='Not enrolled'
+                        length="12 hours"
                         progress="0"
                     />
                     <Coursecard
@@ -161,7 +173,8 @@ const Courses = () => {
                         title="Soil Fertility Management"
                         imageSrc={soil}
                         tags={["Beginner", "Free", "Soil Management"]}
-                        length="30"
+                        status='Not enrolled'
+                        length="12 hours"
                         progress="0"
                     />
                     <Coursecard
@@ -169,7 +182,8 @@ const Courses = () => {
                         title="Crop Rotation"
                         imageSrc={soil}
                         tags={["Beginner", "Free", "Soil Management"]}
-                        length="30"
+                        status='Not enrolled'
+                        length="12 hours"
                         progress="0"
                     />
                     <Coursecard

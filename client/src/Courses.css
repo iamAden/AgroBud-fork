@@ -1,10 +1,10 @@
-.main-container{
-    height: 100vh auto;
+.main-container-course{
+    height: 100vh ;
     flex-direction:row;
     padding-top: 60px;
     /* position: relative; */
     /* display: flex; */
-    padding-bottom: 60px;
+    /* margin-bottom: 80px; */
     max-width: 100;
 }
 .side-container{
@@ -56,11 +56,11 @@
     align-items: left;
     justify-content: center;
     height: auto;
-    padding-top: 50px;
+    padding-top: 60px;
     background-color: #ffffff;
     margin-left: 250px;
     padding-left: 40px;
-    display:flex;
+    
 }
 .inner-container{
     display:inline-flex;
