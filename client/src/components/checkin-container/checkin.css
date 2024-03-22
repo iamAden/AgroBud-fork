@@ -20,6 +20,7 @@
     border-color: white;
     border-width: 5px;
     font-size: 16px;
+    cursor: pointer;
 }
 
 .coin-btn:hover{
@@ -29,7 +30,13 @@
 }
 
 .true-btn{
-  background-color: gray;
+  background-color: rgb(161, 161, 161);
+}
+
+.true-btn:hover{
+    transform: none;
+    box-shadow: none;
+    cursor: default;
 }
 
 #illustration-big-coin{
