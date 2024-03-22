@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Hero.css";
 import illustration1 from "../../assets/home-illust1.png";
 import illustration2 from "../../assets/home-illust2.png";
@@ -12,8 +13,11 @@ const Hero = () => {
       <div className="hero" id="home" >
         <div className="hero-big">
           <div className="hero-text" >
-            <h1 >The best online platform where farmers learn and connect </h1>
+            <h1 >The best online platform where farmers learn and connect </h1> 
+            <Link to="/register">
             <button className="hero-btn">Get Started</button>
+          </Link>
+
           </div>
           <img src={illustration1} className="illustration"></img>
         </div>
