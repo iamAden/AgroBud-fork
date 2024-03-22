@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 import courseData from './CourseData';
 
 import "./Home.css";
-import Chatbot from './components/chatbot/Chatbot';
+
 const Home = () => {
   return (
     <div>
