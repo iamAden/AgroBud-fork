@@ -5,6 +5,8 @@ import precisionagriculture from "./assets/precisionagriculture.jpg";
 import chatbot from "./assets/chatbot-ic.png";
 import addCourse from "./assets/add-explore.png";
 import Footer from "./components/Footer/Footer";
+import Chatbot from './components/chatbot/Chatbot';
+import CoursePage from './CoursePage';
 // type npm i react-router-dom
 import { Link } from "react-router-dom";
 
@@ -29,7 +31,7 @@ const Home = () => {
                         title="AI with Agriculture"
                         imageSrc={precisionagriculture}
                         tags={["Beginner", "Free", "ICT in farming"]}
-                        duration="15"
+                        length="15 mins"
                         progress="50"
             />
 
@@ -52,17 +54,15 @@ const Home = () => {
                         title="AI Trends in Agriculture"
                         imageSrc={precisionagriculture}
                         tags={["Beginner", "Free", "ICT in farming"]}
-                        duration="0"
+                        length="0 mins"
                         progress="100"
             />
           </div>
         </div>
         <div className="float-buttons">
-                <Link to="/chatbot">
-                    <btn>
-                        <img className="float-icon" src={chatbot} alt="ChatBot" />
-                    </btn>
-                </Link>
+        <div className="float-buttons">
+                <Chatbot/>
+            </div>
             </div>
 
 
