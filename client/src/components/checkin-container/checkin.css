@@ -1,0 +1,38 @@
+#checkin{
+    padding:30px;
+    margin:0 auto;
+}
+
+#checkin-container{
+    background-color: #00676C;
+    padding:30px;
+    border-radius: 10px;
+    align-content: center;
+    align-items: center;
+    margin:0 auto;
+}
+
+.coin-btn{
+    margin:10px;
+    padding: 5px;
+    border-radius: 10px;
+    border-style:groove;
+    border-color: white;
+    border-width: 5px;
+    font-size: 16px;
+}
+
+.coin-btn:hover{
+    transform: translate(0px, -5px);
+    box-shadow: 0px 37px 20px -15px rgba(0,0,0,0.2);
+
+}
+
+.true-btn{
+  background-color: gray;
+}
+
+#illustration-big-coin{
+    width:50%
+    
+}

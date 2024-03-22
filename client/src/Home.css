@@ -15,11 +15,11 @@
     justify-content:left;
 }
 
-#home-title{
+.home-title{
     text-align: left;
     color: #252B42;
     font-size: 50px;
-    position: absolute;
+    position: relative;
     left:8%;
 }
 
@@ -42,7 +42,7 @@
     align-items: left;
     justify-content: center;
     height: auto;
-    padding-top: 80px;
+    padding-top: 30px;
     background-color: #ffffff;
     margin-left: 60px;
     padding-left: 30px;
@@ -81,5 +81,27 @@
 #addCourseText{
     text-align: centre;
 
+}
+
+.frame-in-1{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+.frame-in-1 img {
+    margin-bottom: 5px;
+    object-fit: contain; 
+  }
+.frame-in-1 p {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+  }
+.frame-in-1 h2{
+    font-size: 50px;
+    color: #00676C;
 }
 

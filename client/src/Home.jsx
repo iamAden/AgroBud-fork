@@ -6,6 +6,9 @@ import chatbot from "./assets/chatbot-ic.png";
 import addCourse from "./assets/add-explore.png";
 import Footer from "./components/Footer/Footer";
 import Chatbot from './components/chatbot/Chatbot';
+import CheckIn from "./components/checkin-container/checkin";
+import illustration1 from "./assets/coin.png";
+
 import CoursePage from './CoursePage';
 // type npm i react-router-dom
 import { Link } from "react-router-dom";
@@ -15,9 +18,23 @@ const Home = () => {
   return (
     <div>
       <Navbar2/>
+      
       <div className="home-container">
+
+      <div className="home-header">
+           <h1 class="home-title">Daily Check-In</h1>
+        </div>
+
+      <div className="sub-container">
+      <div className='frame-in-1'>
+          <img src={illustration1} className="illustration-big-coin"></img>
+          <p>17838 Coins</p>
+        </div>
+      <CheckIn/>
+      </div>
+
         <div className="home-header">
-           <h1 id="home-title">My Courses</h1>
+           <h1 class="home-title">My Courses</h1>
         </div>
 
   
