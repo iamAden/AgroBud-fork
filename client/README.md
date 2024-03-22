@@ -1,6 +1,11 @@
-# AgroBud :plant:
+# AgroBud 🌱
 ## By Team Farmer Steve
-#
-to see the webapp, open repo in vsc, open the terminal, run:
-```npm install``` (for the first time only)
+### Made using React Js
+### Features
+- Online courses
+- Reward system
+- Community page
+### Try it yourself !
+To see the webapp, open repo in vsc, open the terminal, run:
+```npm install``` 
 ```npm run dev```

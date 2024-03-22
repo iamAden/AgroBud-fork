@@ -38,7 +38,7 @@ const UploadCommunity = () => {
     <>
       <Navbar2 />
 
-      <div className="main-container">
+      <div className="upload-main-container">
         <Link to="/community">
           <button id="back-to-com">
             <img id="back-icon" src={back} />
