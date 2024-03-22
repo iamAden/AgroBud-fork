@@ -29,6 +29,14 @@
     left:8%;
     flex-direction: row;
 }
+#referral-code{
+  text-align: right;
+  color: #252B42;
+  /* font-size: 50px; */
+  position: absolute;
+  right:8%;
+  flex-direction: row;
+}
 .frame-1 {
     /* position: relative; */
     top: 200px;
