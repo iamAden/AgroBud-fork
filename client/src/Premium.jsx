@@ -11,15 +11,18 @@ const Premium = () => {
       <div className='premium-header'>
         <h1 id="premium-title">Premium</h1>
       </div>
-      
+      <br></br>
+      <h1>
+        Unlock Unlimited Courses and Zero Ads!
+      </h1>
       <div className='premium-frame'>
         <div className='premium-content'>
           <h1>Annual</h1>
           <div className='cost'>
-            <h1>RM80</h1>
+            <h1>RM29.99</h1>
             <p>per year</p>
           </div>
-          <p>Save RM40</p>
+          <p>Save 50%</p>
           <button className='btnSelect'>Select</button>
         </div>
 
@@ -29,7 +32,7 @@ const Premium = () => {
             <h1>RM19.99</h1>
             <p>per 6 months</p>
           </div>
-          <p>Save RM10</p>
+          <p>Save 33%</p>
           <button className='btnSelect'>Select</button>
         </div>
 

@@ -43,7 +43,7 @@ const Rewards = () => {
         </div>
         <div className="frame-in-1">
           <h2>
-            Let’s collect the coin <br />
+            Let’s collect coins <br />
             and redeem the rewards
           </h2>
         </div>

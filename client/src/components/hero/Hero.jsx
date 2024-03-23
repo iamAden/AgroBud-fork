@@ -29,9 +29,7 @@ const Hero = () => {
           <div className="hero-text">
             <h1 >Learn from Personalised Online Course</h1>
             <p>
-              Our online courses are taught by our partnered professionals from
-              UM. Be ready to learn about crop management such as sustainable
-              management
+              Our online courses are taught by our partnered professionals. Be ready to learn about sustainable crop management using the latest modern technologies in farming.
             </p>
           </div>
         </div>
@@ -41,7 +39,7 @@ const Hero = () => {
             <h1>Engage in Community Forum</h1>
             <p>
               A place where you can engage with the community. Gain knowledge
-              from users alike and share you rown too!
+              from users alike and share your own too!
             </p>
           </div>
           <img src={illustration3} className="illustration"></img>
@@ -52,15 +50,14 @@ const Hero = () => {
           <div className="hero-text">
             <h1>Stay motivated with our Reward System</h1>
             <p>
-              Earn points by completing our course and being active in the
-              community. Redeem your points for amazing rewards.
+              Earn coins by completing our courses and visiting our website daily. Redeem your coins for amazing rewards.
             </p>
           </div>
         </div>
         <div className="hero-big" id="premium">
           <div className="hero-text">
             <h1>Unlock Premium Features</h1>
-            <p>Join our premium membership for exclusive courses and no ads!</p>
+            <p>Join our premium membership for exclusive courses and zero ads!</p>
           </div>
           <img src={illustration5} className="illustration5"></img>
         </div>
