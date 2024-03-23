@@ -106,3 +106,17 @@
 .arrow-btn:hover{
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
+#coinillus{
+    width:15%;
+}
+.done-popup{
+    background-color: #fff;
+    border-radius: 15px;
+    font-size: 30px;
+    text-align: center;
+    width: 500px;
+    height: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    z-index: 10;
+}

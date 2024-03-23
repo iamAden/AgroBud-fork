@@ -1,6 +1,8 @@
 import pestmanagement from "./assets/pestmanagement.jpg";
 import precisionagriculture from "./assets/precisionagriculture.jpg";
 import soil from "./assets/soil.jpg";
+import pestthumbnail from "./assets/pestthumbnail.png"
+import mlthumbnail from "./assets/ml.png"
 
 const courseData = [
 {
@@ -13,8 +15,8 @@ const courseData = [
     progress: 0,
     description: 'This course introduces learners to the world of Harmful Pests, covering essential concepts in pest management. Suitable for beginners, it offers a comprehensive understanding of pest control strategies over a course of 12 hours. With a focus on practical applications, students gain insights into identifying, preventing, and managing pest infestations effectively.',
     chapters: [
-        {id:1,title:'Chapter 1: Introduction to Harmful Pests'}, 
-        {id:2,title:'Chapter 2: Types of Harmful Pests'}, 
+        {id:1, title:'Chapter 1: Introduction to Harmful Pests',thumbnail: pestthumbnail},
+        {id:2, title:'Chapter 2: Types of Harmful Pests'},
         {id:3, title:'Chapter 3: Identifying Pest Infestations'},
         {id:4, title:'Chapter 4: Common Pest Control Methods'},
         {id:5, title:'Chapter 5: Integrated Pest Management (IPM)'},
@@ -32,7 +34,7 @@ const courseData = [
     chapters: [
         {id:1, title:'Chapter 1: Introduction to AI in Agriculture'},
         {id:2, title:'Chapter 2: Data Collection and Preprocessing for AI Applications'},
-        {id:3, title:'Chapter 3: Machine Learning Algorithms for Crop Management'},
+        {id:3, title:'Chapter 3: Machine Learning Algorithms for Crop Management', thumbnail: mlthumbnail},
         {id:4, title:'Chapter 4: AI Applications in Precision Agriculture'},
         {id:5, title:'Chapter 5: Livestock Monitoring and Health Management with AI'},
         {id:6, title:'Chapter 6: Ethical and Social Implications of AI in Agriculture'}],

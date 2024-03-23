@@ -1,18 +1,19 @@
-import React from 'react'
+import React, {useState} from 'react'
 import "./Lesson.css"
 import { useParams } from 'react-router-dom'
 import courseData from './CourseData';
 import Navbar2 from './components/navbar/Navbar2';
 import Footer from './components/Footer/Footer';
 import Progress_bar from './components/ProgressBar';
-import thumbnail from './assets/ml.png'
 import {faChevronLeft,faChevronRight} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import coin from "./assets/coin.png";
 
 const Lesson = () => {
-  const {id, chapterid} = useParams();
- const course = courseData.find(course => course.id === parseInt(id));
- const chapter = course.chapters.find(chapter => chapter.id === parseInt(chapterid));
+const {id, chapterid} = useParams();
+const course = courseData.find(course => course.id === parseInt(id));
+const chapter = course.chapters.find(chapter => chapter.id === parseInt(chapterid));
+const [done, setDone] = useState(false);
 
   return (
     <div>
@@ -44,7 +45,7 @@ const Lesson = () => {
           <div>Let's check out the video below!</div>
 
           <div className='thumbnail'>
-            <img src={thumbnail}></img>
+            <img src={chapter.thumbnail}></img>
           </div>
 
           <br></br>
@@ -52,9 +53,19 @@ const Lesson = () => {
 
           <div className='done-button'>
             <div className='arrow-btn'><FontAwesomeIcon icon={faChevronLeft} /></div>
-            <div className='green-btn-lesson'>DONE</div>
+            <div className='green-btn-lesson' onClick={() => setDone(!done)}>DONE</div>
             <div className='arrow-btn'><FontAwesomeIcon icon={faChevronRight} /></div>
           </div>
+          {done &&
+            <div className='popup-overlayy'>
+                <div className='done-popup'>
+                  <img src={coin} id='coinillus'></img>
+                  <div>Congrats!<br></br> You have earned 10 coins!</div>
+                  <button className='green-btn'  onClick={() => setDone(false)}>OK</button>
+                  
+              </div>
+            </div>
+        }
         </div>
         
       </div>

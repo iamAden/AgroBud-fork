@@ -70,6 +70,7 @@ const Home = () => {
                         title="AI Trends in Agriculture"
                         imageSrc={precisionagriculture}
                         tags={["Beginner", "Free", "ICT in farming"]}
+                        status="Completed"
                         duration="0"
                         progress="100"
             />

@@ -8,7 +8,7 @@ import send from './../../assets/send.png';
 const Chatbot = () => {
     const [chatopen, setChatopen] = useState(false);
     const [inputText, setInputText] = useState('');
-    const messages = ['Hi, I am your personal chatbot! Ask me about the weather!', 'What is the weather like today?', 'Its 38 degrees today but feels like 41 degrees.'];
+    const messages = ['Hi, I am your personal chatbot! Ask me anything about crop management!', 'What is method best for weed control?', 'Herbicide application can provide the most effective and time-efficient method of managing weeds. Numerous herbicides are available that provide effective weed control and are selective so that grasses are not injured.'];
     const chatRef = useRef(null);
 
     const toggle = () => {
