@@ -54,7 +54,7 @@ const Home = () => {
           <Link to={`/Courses`}>
             <div className='add-container'>
                 <img src={addCourse} alt="Add Course" id="addCourseIcon"/>
-                <p id="addCourseText">More Course</p>
+                <p id="addCourseText">More Courses</p>
             </div>
           </Link>
           </div>
