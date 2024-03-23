@@ -2,15 +2,11 @@ import React from 'react'
 import Navbar2 from './components/navbar/Navbar2'
 import Coursecard from './components/course-card/Coursecard';
 import precisionagriculture from "./assets/precisionagriculture.jpg";
-import chatbot from "./assets/chatbot-ic.png";
 import addCourse from "./assets/add-explore.png";
 import Footer from "./components/Footer/Footer";
 import Chatbot from './components/chatbot/Chatbot';
 import CheckIn from "./components/checkin-container/checkin";
 import illustration1 from "./assets/coin.png";
-
-import CoursePage from './CoursePage';
-// type npm i react-router-dom
 import { Link } from "react-router-dom";
 import courseData from './CourseData';
 
@@ -80,12 +76,8 @@ const Home = () => {
           </div>
         </div>
         <div className="float-buttons">
-                <Link to="/chatbot">
-                    <btn>
-                        <img className="float-icon" src={chatbot} alt="ChatBot" />
-                    </btn>
-                </Link>
-            </div>
+          <Chatbot/>
+        </div>
 
 
       </div>

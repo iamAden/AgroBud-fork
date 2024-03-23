@@ -7,10 +7,8 @@ import Footer from "./components/Footer/Footer";
 import Navbar2 from './components/navbar/Navbar2';
 import SearchBar from './components/search-bar/SearchBar';
 import Chatbot from './components/chatbot/Chatbot';
-import { Link } from "react-router-dom";
 import biotech from "./assets/biotech.jpg";
 import Coursecard from './components/course-card/Coursecard';
-import CoursePage from './CoursePage';
 import courseData from './CourseData';
 
 const Courses = () => {

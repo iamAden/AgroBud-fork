@@ -26,7 +26,7 @@ const Premium = () => {
         <div className='premium-content'>
           <h1>Semi-Annual</h1>
           <div className='cost'>
-            <h1>RM50</h1>
+            <h1>RM19.99</h1>
             <p>per 6 months</p>
           </div>
           <p>Save RM10</p>
@@ -36,7 +36,7 @@ const Premium = () => {
         <div className='premium-content'>
           <h1>Monthly</h1>
           <div className='cost'>
-            <h1>RM10</h1>
+            <h1>RM4.99</h1>
             <p>per month</p>
           </div>
           <button className='btnSelect'>Select</button>

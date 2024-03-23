@@ -4,7 +4,6 @@ import Popup from 'reactjs-popup'
 import 'reactjs-popup/dist/index.css'
 import Navbar2 from './components/navbar/Navbar2';
 import "./Rewards.css";
-import { Link } from "react-router-dom";
 import illustration1 from "./assets/coin.png";
 import illustration2 from "./assets/farmer.png";
 import promo1 from "./assets/promo-1.png";
