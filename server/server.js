@@ -83,15 +83,3 @@ app.post("/login", async (req, res) => {
     res.status(500).json({ error: "Error logging in" });
   }
 });
-
-//GET username
-app.get("/login", async (req, res) => {
-  try {
-    email;
-    const user = await User.findOne({ email });
-
-    res.status(201).json(users);
-  } catch (error) {
-    res.status(500).json({ error: "Unable to get users" });
-  }
-});
