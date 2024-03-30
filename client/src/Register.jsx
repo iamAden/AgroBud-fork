@@ -16,20 +16,20 @@ const Register = () => {
 
   const navigate = useNavigate();
 
-  useEffect(() => {
-    fetchUsers();
-  }, []);
+  // useEffect(() => {
+  //   fetchUsers();
+  // }, []);
 
-  const fetchUsers = () => {
-    axios.get("http://localhost:3002/register").then((res) => {
-      // console.log(res.data)
-    });
-  };
+  // const fetchUsers = () => {
+  //   axios.get("http://localhost:3002/api/auth/register").then((res) => {
+  //     // console.log(res.data)
+  //   });
+  // };
 
   const handleSubmit = (event) => {
     event.preventDefault();
     axios
-      .post("http://localhost:3002/register", {
+      .post("http://localhost:3002/api/auth/register", {
         email,
         username,
         password,
@@ -41,7 +41,7 @@ const Register = () => {
         setUsername("");
         setPassword("");
         setReferral("");
-        fetchUsers();
+        // fetchUsers();
         navigate("/login");
       })
       .catch((error) => {
@@ -50,14 +50,14 @@ const Register = () => {
   };
 
   return (
-    <div class="login">
+    <div className="login">
       <Navbar />
-      <div class="logincontainer">
-        <h1 class="login-header">REGISTER</h1>
+      <div className="logincontainer">
+        <h1 className="login-header">REGISTER</h1>
         <p id="login-desc">
           Greetings! Welcome to this wonderful journey with us.
         </p>
-        <div class="credential-container">
+        <div className="credential-container">
           <form onSubmit={handleSubmit}>
             <div className="Input-Container">
               <label>Email Address: </label>

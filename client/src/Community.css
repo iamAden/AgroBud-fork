@@ -4,7 +4,7 @@
     background-color: #fff;
     background-size: cover;
     background-position: center;
-    top: 60 px;
+    top: 60px;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -74,4 +74,5 @@
     transform: translate(0px, -10px);
     cursor: pointer;
 }
+
 

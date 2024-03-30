@@ -1,57 +1,53 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/navbar-before-login/Navbar";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { AuthContext } from "./context/AuthContext";
 import "./Login.css";
 
 const Login = () => {
-  const [users, setUsers] = useState([]);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
-  useEffect(() => {
-    fetchUsers();
-  }, []);
-
-  const fetchUsers = () => {
-    axios.get("http://localhost:3002/register").then((res) => {
-      console.log(res.data);
-    });
-  };
+  const { updateUser } = useContext(AuthContext);
 
   const handleLogin = async (event) => {
     event.preventDefault();
     try {
-      const response = await axios.post("http://localhost:3002/login", {
-        email,
-        password,
-      });
-      const token = response.data.token;
+      const response = await axios.post(
+        "http://localhost:3002/api/auth/login",
+        {
+          email,
+          password,
+        }
+      );
+      // const token = response.data.token;
       alert("Login successful");
       setEmail("");
       setPassword("");
-      fetchUsers();
       navigate("/home");
       window.location.reload();
-      localStorage.setItem("token", token);
+
+      // localStorage.setItem("token", token);
+      updateUser(response.data);
     } catch (error) {
       console.log("Login Error", error);
     }
   };
 
   return (
-    <div class="login">
+    <div className="login">
       <Navbar />
-      <div class="logincontainer">
-        <h1 class="login-header">LOGIN</h1>
+      <div className="logincontainer">
+        <h1 className="login-header">LOGIN</h1>
         <p id="login-desc">
           Welcome Back! Ready to continue your journey with us.
         </p>
-        <div class="credential-container">
+        <div className="credential-container">
           <form onSubmit={handleLogin}>
             <div className="Input-Container">
               <label htmlFor="">Email Address: </label>

@@ -7,6 +7,7 @@ const ExploreList = ({ data }) => {
   const exploreItems = data.map((item) => {
     return (
       <ExploreItem
+        key={item.id}
         id={item.id}
         pfp={item.pfp}
         username={item.username}
@@ -17,7 +18,7 @@ const ExploreList = ({ data }) => {
     );
   });
 
-  return <div class="explore-list-container">{exploreItems}</div>;
+  return <div className="explore-list-container">{exploreItems}</div>;
 };
 
 export default ExploreList;

@@ -15,7 +15,7 @@ const SearchBar = () => {
         onChange={(e) => setQuery(e.target.value)}
         type="search"
       />
-      <button type="submit" class="searchButton">
+      <button type="submit" className="searchButton">
         <img id="search-icon" src={searchIcon} alt="Search Icon" />
       </button>
     </div>

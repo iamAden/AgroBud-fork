@@ -1,14 +1,38 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import "./Navbar2.css";
 import logowtext from "../../assets/logowithtext.png";
 import { Link } from "react-router-dom";
 import profile from "../../assets/profile-default.png";
 import Popup from "reactjs-popup";
+import { useNavigate } from "react-router-dom";
+import axios from "axios";
+import { AuthContext } from "../../context/AuthContext";
 
 const Navbar2 = () => {
   //default name
   let name = "User123";
+
+  //get username from local storage
+  const storedUser = JSON.parse(localStorage.getItem("AgroBudUser"));
+  if (storedUser) {
+    name = storedUser._doc.username;
+  }
+
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const navigate = useNavigate();
+
+  const { updateUser } = useContext(AuthContext);
+
+  const handleLogout = async () => {
+    try {
+      await axios.post("http://localhost:3002/api/auth/logout");
+      updateUser(null);
+      navigate("/");
+    } catch (err) {
+      console.log(err);
+    }
+  };
 
   return (
     <nav className="container">
@@ -72,9 +96,9 @@ const Navbar2 = () => {
                     <button id="cancel-button" onClick={close}>
                       Cancel
                     </button>
-                    <Link to="/">
-                      <button id="yes-button">Yes</button>
-                    </Link>
+                    <button id="yes-button" onClick={handleLogout}>
+                      Yes
+                    </button>
                   </div>
                 </div>
               </div>

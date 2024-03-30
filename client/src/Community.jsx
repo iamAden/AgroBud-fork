@@ -23,13 +23,13 @@ const Community = () => {
         <ExploreList data={ComData} />
         <div className="float-buttons">
           <Link to="/community/upload">
-            <btn>
+            <button className="button">
               <img
                 className="float-icon"
                 src={uploadExplore}
                 alt="Upload Explore"
               />
-            </btn>
+            </button>
           </Link>
           <Chatbot />
         </div>

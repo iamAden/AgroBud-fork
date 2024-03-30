@@ -54,7 +54,7 @@ const CommunityData = [
     desc: "Take a look at my latest project — a DIY automatic drip irrigation system! Saving water, saving time, and keeping those plants happy! #irrigation #diyproject",
   },
   {
-    id: 1,
+    id: 7,
     pfp: explorePfp,
     username: "Farmer Steve",
     pic: explorePic1,
@@ -62,7 +62,7 @@ const CommunityData = [
     desc: "My wheat progress Day 129! #wheat",
   },
   {
-    id: 2,
+    id: 8,
     pfp: explorePfp,
     username: "Farmer Steve",
     pic: explorePic3,
@@ -70,7 +70,7 @@ const CommunityData = [
     desc: "Check out my incredible giant pumpkin! No exaggeration, just pure pumpkin power! #nocap #pumpkin",
   },
   {
-    id: 3,
+    id: 9,
     pfp: explorePfp,
     username: "Farmer Steve",
     pic: explorePic2,
@@ -78,7 +78,7 @@ const CommunityData = [
     desc: "Take a look at my latest project — a DIY automatic drip irrigation system! Saving water, saving time, and keeping those plants happy! #irrigation #diyproject",
   },
   {
-    id: 4,
+    id: 10,
     pfp: explorePfp,
     username: "Farmer Steve",
     pic: explorePic1,
@@ -86,7 +86,7 @@ const CommunityData = [
     desc: "My wheat progress Day 129! #wheat",
   },
   {
-    id: 5,
+    id: 11,
     pfp: explorePfp,
     username: "Farmer Steve",
     pic: explorePic3,
@@ -94,7 +94,7 @@ const CommunityData = [
     desc: "Check out my incredible giant pumpkin! No exaggeration, just pure pumpkin power! #nocap #pumpkin",
   },
   {
-    id: 6,
+    id: 12,
     pfp: explorePfp,
     username: "Farmer Steve",
     pic: explorePic2,
